@@ -1,6 +1,10 @@
+#ifndef USERNAME
+#error "USERNAME not defined"
+#endif
+
 /* user and group to drop privileges to */
-static const char *user  = "noot";
-static const char *group = "noot";
+static const char *user  = USERNAME;
+static const char *group = USERNAME;
 
 static const char *colorname[NUMCOLS] = {
 	[BACKGROUND] =   "black",     /* after initialization */
